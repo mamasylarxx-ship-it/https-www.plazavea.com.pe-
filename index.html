@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Mundo Perruno | Tu web profesional</title>
+  <meta name="description" content="Página web profesional de perritos: adopción, tienda, salud, comunidad y contacto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="inicio">
+    <div class="container nav">
+      <a class="brand" href="#inicio">🐾 Mi Mundo Perruno</a>
+      <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
+      <nav id="menu" class="menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#adopcion">Adopción</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto" class="btn btn-small">Tu cita</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="pill">Sitio premium listo para tu marca</p>
+          <h1>La página web de perritos que se ve <span>PRO</span> y vende mejor.</h1>
+          <p class="hero-text">Diseñada para captar clientes, mostrar tus servicios y crear confianza. Puedes usarla para guardería, veterinaria, adiestramiento o adopción.</p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn">Quiero mi web</a>
+            <a href="#planes" class="btn ghost">Ver planes</a>
+          </div>
+          <div class="stats">
+            <article><strong>+1,500</strong><span>Clientes felices</span></article>
+            <article><strong>98%</strong><span>Satisfacción</span></article>
+            <article><strong>24/7</strong><span>Soporte</span></article>
+          </div>
+        </div>
+        <aside class="booking-card">
+          <h2>Reserva una llamada</h2>
+          <p>Te ayudamos a personalizar esta web para que quede 100% tuya.</p>
+          <form id="reserva-form">
+            <label>Tu nombre
+              <input required type="text" name="nombre" placeholder="Ej. Carlos" />
+            </label>
+            <label>Correo
+              <input required type="email" name="email" placeholder="correo@dominio.com" />
+            </label>
+            <label>Negocio
+              <input required type="text" name="negocio" placeholder="Ej. Perritos Perú" />
+            </label>
+            <button class="btn" type="submit">Enviar solicitud</button>
+          </form>
+          <p id="mensaje" class="mensaje" aria-live="polite"></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <h2>Servicios que puedes mostrar</h2>
+        <div class="grid cards-4">
+          <article class="card"><h3>Adiestramiento</h3><p>Programas por niveles con metodología positiva y seguimiento semanal.</p></article>
+          <article class="card"><h3>Guardería diaria</h3><p>Áreas de juego, descanso y monitoreo en tiempo real para tranquilidad total.</p></article>
+          <article class="card"><h3>Veterinaria</h3><p>Chequeos, vacunación y control preventivo en una experiencia amigable.</p></article>
+          <article class="card"><h3>Peluquería spa</h3><p>Baño, corte, limpieza y tratamiento según el tipo de piel y pelaje.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="adopcion">
+      <div class="container">
+        <h2>Perritos en adopción</h2>
+        <div class="grid cards-3">
+          <article class="pet-card">
+            <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=900&q=80" alt="Perrito Rocky" />
+            <div><h3>Rocky</h3><p>2 años · Juguetón · Vacunado</p><button class="btn ghost" type="button">Postular</button></div>
+          </article>
+          <article class="pet-card">
+            <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=900&q=80" alt="Perrita Luna" />
+            <div><h3>Luna</h3><p>1 año · Dulce · Esterilizada</p><button class="btn ghost" type="button">Postular</button></div>
+          </article>
+          <article class="pet-card">
+            <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&w=900&q=80" alt="Perrito Max" />
+            <div><h3>Max</h3><p>3 años · Tranquilo · Sociable</p><button class="btn ghost" type="button">Postular</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tienda">
+      <div class="container">
+        <h2>Tienda destacada</h2>
+        <div class="grid cards-3">
+          <article class="product"><h3>Pack Premium</h3><p>Correa + arnés + placa personalizada.</p><strong>S/ 149</strong></article>
+          <article class="product"><h3>Snacks Naturales</h3><p>Bolsa de premios saludables para entrenamiento.</p><strong>S/ 39</strong></article>
+          <article class="product"><h3>Cama Ortopédica</h3><p>Máximo confort para descanso profundo.</p><strong>S/ 199</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="planes">
+      <div class="container">
+        <h2>Planes para esta web</h2>
+        <div class="grid cards-3">
+          <article class="price-card">
+            <h3>Base</h3><p class="price">S/ 0</p><ul><li>Esta versión lista para usar</li><li>1 página responsive</li><li>Formulario funcional</li></ul>
+          </article>
+          <article class="price-card featured">
+            <h3>Pro</h3><p class="price">S/ 299</p><ul><li>Dominio personalizado</li><li>Integración WhatsApp</li><li>SEO inicial</li></ul>
+          </article>
+          <article class="price-card">
+            <h3>Elite</h3><p class="price">S/ 599</p><ul><li>Tienda + pagos</li><li>Panel básico de gestión</li><li>Analíticas y optimización</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonios">
+      <div class="container">
+        <h2>Opiniones reales</h2>
+        <div class="grid cards-3">
+          <blockquote class="quote">“Nuestra web nueva triplicó las reservas en 2 meses.”<cite>— Club Canino Lince</cite></blockquote>
+          <blockquote class="quote">“Diseño elegante, rápido y muy fácil de editar.”<cite>— VetHouse Perú</cite></blockquote>
+          <blockquote class="quote">“Ahora sí parecemos una marca premium.”<cite>— Guardería Patitas</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="container contact-box">
+        <div>
+          <h2>¿Quieres el link y que sea tuyo?</h2>
+          <p>Sí se puede. Publica esta web en minutos y conéctala a tu dominio (ejemplo: <strong>www.tumarca.com</strong>).</p>
+          <ul>
+            <li>✔ Hosting gratuito inicial (Netlify/Vercel)</li>
+            <li>✔ Dominio propio desde Namecheap/Cloudflare</li>
+            <li>✔ SSL automático (https)</li>
+          </ul>
+        </div>
+        <a class="btn" href="README.md">Ver pasos de publicación</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© 2026 Mi Mundo Perruno · Diseñado para que sea tuyo.</p>
+      <a href="#inicio">Subir</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
